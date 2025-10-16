@@ -457,7 +457,7 @@
 </p >
 
 <p>
-生财有大道：生之者众，食之者寡；为之者疾，用之者舒；则财恒足矣。仁者以财发身，不仁者以身发财。未有上好仁（hào），而下不好（hào）义者也；未有好（hào）义，其事不终者也；未有府库财，非其财者也。孟献子曰：“畜（xù）马乘（shèng），不察于鸡豚（tún）；伐冰之家，不畜（xù）牛羊；百乘（shèng）之家，不畜（xù）聚敛之臣；与其有聚敛之臣，宁（nìng）有盗臣。”此谓国不以利为利，以义为利也。长（zhǎng）国家而务财用者，必自小人矣，彼为（wéi）善之。小人之使为（wéi）国家，菑（zāi灾）害并至，虽有善者，亦无如之何矣。此谓国不以利为利，以义为利也。
+生财有大道：生之者众，食之者寡；为之者疾，用之者舒；则财恒足矣。仁者以财发身，不仁者以身发财。未有上好（hào）仁，而下不好（hào）义者也；未有好（hào）义，其事不终者也；未有府库财，非其财者也。孟献子曰：“畜（xù）马乘（shèng），不察于鸡豚（tún）；伐冰之家，不畜（xù）牛羊；百乘（shèng）之家，不畜（xù）聚敛之臣；与其有聚敛之臣，宁（nìng）有盗臣。”此谓国不以利为利，以义为利也。长（zhǎng）国家而务财用者，必自小人矣，彼为（wéi）善之。小人之使为（wéi）国家，菑（zāi灾）害并至，虽有善者，亦无如之何矣。此谓国不以利为利，以义为利也。
 </p >
 	
               
@@ -483,14 +483,14 @@
             const resetBtn = document.getElementById('resetBtn');
             
             // 从本地存储获取计数或初始化为0
-            let count = parseInt(localStorage.getItem('prayerCount')) || 0;
+            let count = parseInt(localStorage.getItem('prayerCount-daxue')) || 0;
             countDisplay.textContent = count;
             
             // 增加计数
             countBtn.addEventListener('click', function() {
                 count++;
                 countDisplay.textContent = count;
-                localStorage.setItem('prayerCount', count);
+                localStorage.setItem('prayerCount-daxue', count);
                 
                 // 添加视觉反馈
                 const counterSpan = countDisplay.querySelector('span');
@@ -507,7 +507,7 @@
                 if (confirm('确定要重置念诵计数吗？')) {
                     count = 0;
                     countDisplay.textContent = count;
-                    localStorage.setItem('prayerCount', count);
+                    localStorage.setItem('prayerCount-daxue', count);
                     
                     // 添加视觉反馈
                     const counterSpan = countDisplay.querySelector('span');
@@ -540,3 +540,4 @@
 </body>
 
 </html>
+
